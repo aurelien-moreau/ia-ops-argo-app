@@ -38,8 +38,7 @@ spec:
                 fieldRef:
                   fieldPath: metadata.namespace
           livenessProbe:
-            httpGet:
-              path: /health
+            tcpSocket:
               port: 8080
             initialDelaySeconds: 10
             periodSeconds: 10
@@ -50,6 +49,7 @@ spec:
               port: 8080
             initialDelaySeconds: 5
             periodSeconds: 5
+            failureThreshold: 6
           resources:
             requests:
               cpu: 10m
