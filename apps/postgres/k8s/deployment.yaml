@@ -20,7 +20,7 @@ spec:
           image: postgres:16-alpine
           args:
             - "-c"
-            - "max_connections=200"
+            - "max_connections=30"
             - "-c"
             - "log_connections=on"
             - "-c"
