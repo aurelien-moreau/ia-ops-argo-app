@@ -9,7 +9,7 @@ metadata:
     # Stakater Reloader: automatically rolls pods when demo-app-config ConfigMap changes
     reloader.stakater.com/auto: "true"
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: demo-app
